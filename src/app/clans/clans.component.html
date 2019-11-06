@@ -1,0 +1,32 @@
+<div class="clans-container">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let clan of clans">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ clan.title }}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ clan.subTitle }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <h3 class="mat-h3">Sobre o clã</h3>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz
+        breeds of dog from Japan. A small, agile dog that copes very well with
+        mountainous terrain, the Shiba Inu was originally bred for hunting.
+      </p>
+
+      <h3 class="mat-h3">Sobre o clã</h3>
+      <nav class="disciplines-container">
+        <mat-list class="mat-elevation-z2">
+          <mat-list-item>Item 1</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 2</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 3</mat-list-item>
+        </mat-list>
+      </nav>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
