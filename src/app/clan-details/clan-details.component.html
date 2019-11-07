@@ -1,1 +1,39 @@
-<p>clan-details works!</p>
+<div>
+  <section>
+    <app-page-header
+      headerTitle="Detalhes do Clã"
+      backTo="clans"
+    ></app-page-header>
+  </section>
+
+  <section class="page-container">
+    <div class="clan-details-container">
+      <h1 class="main-title clan-details-title">
+        <strong>{{ clan.name }}</strong>
+      </h1>
+      <p>
+        {{ clan.personCreation }}
+      </p>
+
+      <h1 class="main-title">Fraquezas</h1>
+      <p>
+        {{ clan.weakness }}
+      </p>
+
+      <h1 class="main-title">Reputação</h1>
+      <p>
+        {{ clan.reputation }}
+      </p>
+
+      <h1 class="main-title">Disciplinas</h1>
+      <div class="disciplines-list">
+        <mat-list role="list" class="mat-elevation-z2">
+          <div *ngFor="let discipline of clan.disciplines">
+            <mat-list-item role="listitem">{{ discipline }}</mat-list-item>
+            <mat-divider></mat-divider>
+          </div>
+        </mat-list>
+      </div>
+    </div>
+  </section>
+</div>

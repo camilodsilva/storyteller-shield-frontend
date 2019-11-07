@@ -7,6 +7,7 @@ import { ClanDetailsComponent } from "./clan-details/clan-details.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "clans", component: ClansComponent },
   { path: "clanDetails/:clan", component: ClanDetailsComponent }
 ];

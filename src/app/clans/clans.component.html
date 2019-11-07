@@ -1,6 +1,9 @@
 <div class="home-container">
   <section>
-    <app-page-header headerTitle="Lista de Clãs"></app-page-header>
+    <app-page-header
+      headerTitle="Lista de Clãs"
+      backTo="home"
+    ></app-page-header>
   </section>
   <section class="page-container">
     <h1 class="main-title">Clãs</h1>
@@ -9,11 +12,6 @@
       <mat-card class="rules-card" *ngFor="let clan of clans">
         <a [routerLink]="['/clanDetails', clan.name]" routerLinkActive="active">
           <img mat-card-image src="{{ clan.image }}" alt="{{ clan.name }}" />
-          <mat-card-actions>
-            <!-- <button mat-raised-button color="primary">
-              Ir para Detalhes
-            </button> -->
-          </mat-card-actions>
         </a>
       </mat-card>
     </div>

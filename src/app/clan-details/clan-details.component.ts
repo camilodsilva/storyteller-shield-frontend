@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+
+import { ClansInterface } from "../models/ClansInterface";
+import { CLANS_DATA } from "../repositories/ClansRepository";
 
 @Component({
-  selector: 'app-clan-details',
-  templateUrl: './clan-details.component.html',
-  styleUrls: ['./clan-details.component.css']
+  selector: "app-clan-details",
+  templateUrl: "./clan-details.component.html",
+  styleUrls: ["./clan-details.component.css"]
 })
 export class ClanDetailsComponent implements OnInit {
+  private clanName: string;
+  private clan: ClansInterface;
+  private disciplines: string[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+    this.route.paramMap.subscribe(param => {
+      this.clanName = param.get("clan");
 
-  ngOnInit() {
+      CLANS_DATA.map(clan => {
+        if (clan.name === this.clanName) {
+          this.clan = clan;
+        }
+      });
+    });
   }
 
+  ngOnInit() {}
 }

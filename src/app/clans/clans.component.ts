@@ -1,16 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-import { ClansInterface } from "./ClansInterface";
-
-const CLANS_DATA: ClansInterface[] = [
-  { name: "Brujah", image: "/assets/clans/brujah.png" },
-  { name: "Gangrel", image: "/assets/clans/gangrel.png" },
-  { name: "Malkaviano", image: "/assets/clans/malkavian.png" },
-  { name: "Nosferatu", image: "/assets/clans/nosferatu.png" },
-  { name: "Toreador", image: "/assets/clans/toreador.png" },
-  { name: "Tremere", image: "/assets/clans/tremere.png" },
-  { name: "Ventrue", image: "/assets/clans/ventrue.png" }
-];
+import { CLANS_DATA } from "../repositories/ClansRepository";
 
 @Component({
   selector: "app-clans",
