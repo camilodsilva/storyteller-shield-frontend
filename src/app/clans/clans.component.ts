@@ -1,5 +1,17 @@
 import { Component, OnInit } from "@angular/core";
 
+import { ClansInterface } from "./ClansInterface";
+
+const CLANS_DATA: ClansInterface[] = [
+  { name: "Brujah", image: "/assets/clans/brujah.png" },
+  { name: "Gangrel", image: "/assets/clans/gangrel.png" },
+  { name: "Malkaviano", image: "/assets/clans/malkavian.png" },
+  { name: "Nosferatu", image: "/assets/clans/nosferatu.png" },
+  { name: "Toreador", image: "/assets/clans/toreador.png" },
+  { name: "Tremere", image: "/assets/clans/tremere.png" },
+  { name: "Ventrue", image: "/assets/clans/ventrue.png" }
+];
+
 @Component({
   selector: "app-clans",
   templateUrl: "./clans.component.html",
@@ -7,30 +19,9 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ClansComponent implements OnInit {
   private clans;
-  private dataSource;
-  private displayedColumns: string[];
+
   constructor() {
-    this.clans = [
-      { title: "Brujah", subTitle: "Sobre o clã" },
-      { title: "Gangrel", subTitle: "this is a subtitle" },
-      { title: "Malkaviano", subTitle: "this is a subtitle" },
-      { title: "Nosferatu", subTitle: "this is a subtitle" },
-      { title: "Toreador", subTitle: "this is a subtitle" },
-      { title: "Tremere", subTitle: "this is a subtitle" },
-      { title: "Ventrue", subTitle: "this is a subtitle" }
-    ];
-    this.displayedColumns = [
-      "firstDiscipline",
-      "secondDiscipline",
-      "thirdDiscipline"
-    ];
-    this.dataSource = [
-      {
-        firstDiscipline: "Potência",
-        secondDiscipline: "Rapidez",
-        thirdDiscipline: "Presença"
-      }
-    ];
+    this.clans = CLANS_DATA;
   }
 
   ngOnInit() {}

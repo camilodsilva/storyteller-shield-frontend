@@ -1,28 +1,36 @@
-<app-page-header></app-page-header>
-<!-- <div class="home-container">
+<div class="home-container">
   <section>
-    <mat-card class="card-container">
-      <img
-        mat-card-image
-        src="/assets/clans/clans.png"
-        alt="Clãs de Vampiro A Máscara"
-      />
-      <mat-card-header>
-        <div mat-card-avatar class="card-header-image"></div>
-        <mat-card-title>Clãs de Vampiro A Máscara</mat-card-title>
-        <mat-card-subtitle>Lista de clãs</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-actions>
-        <button
-          [routerLink]="'/clans'"
-          routerLinkActive="active"
-          mat-raised-button
-          color="primary"
-          class="detail-button"
-        >
-          Detalhes
-        </button>
-      </mat-card-actions>
-    </mat-card>
+    <app-page-header headerTitle="Home"></app-page-header>
   </section>
-</div> -->
+  <section class="page-container">
+    <h1 class="main-title">Regras</h1>
+
+    <div class="rules-container">
+      <mat-card class="rules-card">
+        <mat-card-header>
+          <mat-card-subtitle>Clãs de Vampiro - A Máscara</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="/assets/clans/clans.png"
+          alt="Photo of a Shiba Inu"
+        />
+        <mat-card-content>
+          <p>
+            Lista de clãs disponíveis e suas fichas técnicas
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            [routerLink]="'/clans'"
+            routerLinkActive="active"
+          >
+            Ir para Detalhes
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </section>
+</div>

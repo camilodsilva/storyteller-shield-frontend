@@ -1,32 +1,21 @@
-<div class="clans-container">
-  <mat-accordion>
-    <mat-expansion-panel *ngFor="let clan of clans">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{ clan.title }}
-        </mat-panel-title>
-        <mat-panel-description>
-          {{ clan.subTitle }}
-        </mat-panel-description>
-      </mat-expansion-panel-header>
+<div class="home-container">
+  <section>
+    <app-page-header headerTitle="Lista de Clãs"></app-page-header>
+  </section>
+  <section class="page-container">
+    <h1 class="main-title">Clãs</h1>
 
-      <h3 class="mat-h3">Sobre o clã</h3>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz
-        breeds of dog from Japan. A small, agile dog that copes very well with
-        mountainous terrain, the Shiba Inu was originally bred for hunting.
-      </p>
-
-      <h3 class="mat-h3">Sobre o clã</h3>
-      <nav class="disciplines-container">
-        <mat-list class="mat-elevation-z2">
-          <mat-list-item>Item 1</mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>Item 2</mat-list-item>
-          <mat-divider></mat-divider>
-          <mat-list-item>Item 3</mat-list-item>
-        </mat-list>
-      </nav>
-    </mat-expansion-panel>
-  </mat-accordion>
+    <div class="rules-container">
+      <mat-card class="rules-card" *ngFor="let clan of clans">
+        <a [routerLink]="['/clanDetails', clan.name]" routerLinkActive="active">
+          <img mat-card-image src="{{ clan.image }}" alt="{{ clan.name }}" />
+          <mat-card-actions>
+            <!-- <button mat-raised-button color="primary">
+              Ir para Detalhes
+            </button> -->
+          </mat-card-actions>
+        </a>
+      </mat-card>
+    </div>
+  </section>
 </div>

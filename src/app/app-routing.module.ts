@@ -3,11 +3,12 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { HomeComponent } from "./home/home.component";
 import { ClansComponent } from "./clans/clans.component";
-import { PageBodyComponent } from "./page-body/page-body.component";
+import { ClanDetailsComponent } from "./clan-details/clan-details.component";
 
 const routes: Routes = [
-  { path: "", component: PageBodyComponent },
-  { path: "clans", component: ClansComponent }
+  { path: "", component: HomeComponent },
+  { path: "clans", component: ClansComponent },
+  { path: "clanDetails/:clan", component: ClanDetailsComponent }
 ];
 
 @NgModule({

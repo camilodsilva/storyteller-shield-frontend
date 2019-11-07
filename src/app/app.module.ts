@@ -18,9 +18,10 @@ import { HomeComponent } from "./home/home.component";
 import { ClansComponent } from "./clans/clans.component";
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { PageBodyComponent } from './page-body/page-body.component';
+import { ClanDetailsComponent } from './clan-details/clan-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ClansComponent, PageHeaderComponent, PageBodyComponent],
+  declarations: [AppComponent, HomeComponent, ClansComponent, PageHeaderComponent, PageBodyComponent, ClanDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

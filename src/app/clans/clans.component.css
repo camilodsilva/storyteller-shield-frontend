@@ -1,7 +1,24 @@
-.clans-container {
-  padding: 0 20px;
+.home-container {
 }
 
-.disciplines-container {
-  margin: 10px 0px;
+.rules-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.rules-card {
+  max-width: 400px;
+  margin: 10px 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .rules-container {
+    display: block;
+  }
+
+  .rules-card {
+    max-width: 100%;
+    margin: 20px 10px;
+  }
 }
