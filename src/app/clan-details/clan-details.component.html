@@ -8,7 +8,7 @@
 
   <section class="page-container">
     <div class="clan-details-container">
-      <h1 class="main-title clan-details-title">
+      <h1 class="main-title">
         <strong>{{ clan.name }}</strong>
       </h1>
       <p>
@@ -29,7 +29,14 @@
       <div class="disciplines-list">
         <mat-list role="list" class="mat-elevation-z2">
           <div *ngFor="let discipline of clan.disciplines">
-            <mat-list-item role="listitem">{{ discipline }}</mat-list-item>
+            <mat-list-item role="listitem">
+              <a
+                [routerLink]="['/disciplines']"
+                fragment="{{ discipline.name }}"
+              >
+                {{ discipline.label }}
+              </a>
+            </mat-list-item>
             <mat-divider></mat-divider>
           </div>
         </mat-list>

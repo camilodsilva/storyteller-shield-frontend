@@ -1,0 +1,75 @@
+import { IDisciplines } from "../models/IDisciplines";
+
+export const DISCIPLINES_DATA: IDisciplines[] = [
+  {
+    name: "Potency",
+    label: "Potência",
+    sumary:
+      "Membros dotados de Potência possuem força sobrenatural. Essa Disciplina permite ao vampiro pular distâncias massivas, levantar pesos tremendos e acertar oponentes com força brutal. Mesmo níveis baixos desse poder podem dar ao Membro poder físico além dos limites mortais. Membros mais poderosos podem pular tão longe que eles aparentam estar voando, arremessar carros como se fossem latas de refrigerante e socar através de paredes como se fossem de papelão. Enquanto as Disciplinas mentais mais sutis podem inspirar temor, a efetividade brutal de Potência é formidável por si só. Os Brujah, Giovanni, Lasombra e Nosferatu são naturalmente dotados com essa Disciplina, mas membros de outros Clãs freqüentemente fazem questão de encontrar alguém que possa ensinar a eles o poder incrível de Potência.",
+    levels: [
+      {
+        level: 5,
+        description: "",
+        system:
+          "cada ponto que o vampiro tem em Potência adiciona um dado a todas as rolagens de dados relacionadas a Força. Além disso, o jogador pode gastar um Ponto de Sangue e mudar seus dados de Potência em um número igual de sucessos automáticos em todas as rolagens de Força por um turno. Em combate desarmado ou com armas brancas, sucessos de Potência (tanto rolados quanto automáticos) são aplicados ao resultado da rolagem de dano."
+      }
+    ]
+  },
+  {
+    name: "Velocity",
+    label: "Rapidez",
+    sumary:
+      "Nem todos os vampiros são criaturas lentas e meticulosas. Quando necessário alguns vampiros podem se mover rápido – realmente rápido. Rapidez permite aos Assamitas, Brujah e Toreador se mover com rapidez surpreendente, tornando-se praticamente um borrão. Os Assamitas usam sua velocidade em conjunto com furtividade para atacar rápida e cruelmente das sombras antes que sejam notados. Os Brujah, por outro lado, simplesmente gostam da vantagem que o poder dá a eles contra circunstâncias impossíveis de se vencer. Os Toreador são mais inclinados a usar Rapidez para prover com um ar de graça sobrenatural as performances ao vivo ou para um empurrão extra ao completar uma obra-prima em tempo, mas eles também podem ser rápidos para arrancar sangue tanto quanto qualquer assassino ou punk quando irritados.",
+    levels: [
+      {
+        level: 5,
+        description: "",
+        system:
+          "Cada ponto de Rapidez adiciona um dado para cada rolagem de dados relacionada à Destreza. Em adição, o jogador pode gastar um Ponto de Sangue para ter uma ação extra até o número de pontos que ele tem em Rapidez no começo do turno; esse gasto pode ir além do máximo gasto normal por Geração. Quaisquer pontos usados para ações extras, no entanto, não estão mais disponíveis para rolagens relacionadas à Destreza durante aquele turno. Essas ações adicionais devem ser físicas (p. ex., o vampiro não pode usar uma Disciplina mental como Dominação múltiplas vezes em um turno), e ações extras ocorrem ao fim do turno (a ação regular do vampiro ainda ocupa o lugar por sua rolagem de iniciativa). Normalmente, uma personagem sem Rapidez deve dividir seus dados se ela quer tomar múltiplas ações em um único turno. Uma personagem usando Rapidez realiza suas ações extra (incluindo movimentação completa) sem penalidade, ganhando uma parada de dados inteira para cada ação em separado. No entanto, ações extra ganhas através de Rapidez não podem por sua vez serem divididas em múltiplas ações."
+      }
+    ]
+  },
+  {
+    name: "Presence",
+    label: "Presença",
+    sumary:
+      "Presença é a Disciplina da manipulação emocional. Vampiros com este poder podem inspirar fervor passional ou terror irracional igualmente em mortais e vampiros. Além disso, ao contrário da maioria das Disciplinas, alguns poderes de Presença podem ser usados em multidões inteiras ao mesmo tempo. Presença pode transcender raça, religião, gênero, classe e (mais importante) natureza sobrenatural. Como tal, este sutil poder é uma das Disciplinas mais úteis que um vampiro pode possuir.Qualquer um pode resistir a Presença por uma cena gastando um ponto de Força de Vontade e fazendo um teste bem sucedido de Força de Vontade (dificuldade 8), mas o indivíduo afetado deve continuar gastando pontos até que não esteja mais na presença do vampiro (ou, no caso de Invocação, até que o efeito desapareça). Vampiros com três ou mais níveis de Geração a menos que o usuário precisa gastar apenas um único ponto de Força de Vontade para ignorar a Presença por uma noite inteira e não precisa testar Força de Vontade.A principal desvantagem de Presença é que ela controla apenas as emoções. Ela faz com que os outros se sintam de certa maneira em relação ao vampiro, mas não lhe dá o controle total sobre eles. Ainda que as pessoas avaliem seriamente as ordens dadas pelo vampiro, ainda estão em posse das próprias mentes. Diretivas suicidas ou ridículas não soam mais sensatas porque quem as dita é extraordinariamente fascinante. Ainda assim, a eloquência inspirada ou a suntuosidade significativa usadas em combinação com esta Disciplina pode permitir que o vampiro exorte os outros ao longo de um trajeto desejado. Os Clãs Brujah, Seguidores de Set, Toreador e Ventrue são adeptos desta Disciplina. No entanto, os Ventrue são indiscutivelmente os mais hábeis na sua aplicação devido à sua capacidade de usar Presença e Dominação em uma combinação eficiente.",
+    levels: [
+      {
+        level: 1,
+        description:
+          "Fascínio: Aqueles próximos ao vampiro sentem de repente o desejo de estar ainda mais perto dele e se tornam receptivos ao seu ponto de vista. Fascínio é extremamente útil na comunicação em massa. Pouco importa o que se diz – os corações das pessoas afetadas inclinam-se à opinião do vampiro. Os fracos querem concordar com ele; mesmo que os obstinados resistam, logo se veem em desvantagem. Fascínio pode tornar uma deliberação arriscada em ima determinada resolução em favor do vampiro quase antes que seus oponentes percebam que a maré virou. Apesar da intensidade desta atração, os mais apaixonados não perdem o sentido de autopreservação. O perigo quebra o encanto da fascinação, assim como deixar a área. Aqueles sujeitos ao Fascínio se lembrarão, entretanto, de como se sentiram na presença do vampiro. Isto vai influenciar suas relações caso venha a encontrar novamente com ele.",
+        system:
+          "O jogador gasta um Ponto de Sangue e testa Carisma + Performance (dificuldade 7). O número de sucessos obtidos determina quantas pessoas são afetadas, como consta na tabela a seguir. Se houver mais pessoas presentes do que o personagem pode influenciar, Fascínio afeta aqueles com níveis mais baixos de Força de Vontade primeiro. O poder funciona pelo resto da cena ou até que o personagem resolva cancelá-lo. Os afetados podem usar pontos de Força de Vontade para superar o efeito, mas devem continuar gastando Força de Vontade toda cena enquanto permanecer na mesma área que o vampiro. Assim que o indivíduo gastar um número de pontos de Força de Vontade igual ao de sucessos conseguidos, ele se livra completamente de Fascínio e continua sem ser afetado pelo resto da noite."
+      },
+      {
+        level: 2,
+        description:
+          "Olhar Aterrorizante: Enquanto todos os Membros podem assustar os outros fisicamente ao revelar suas verdadeiras naturezas vampíricas – revelando garras e presas, encarando com malevolência, sibilando alto e maliciosamente – este poder concentra estes elementos a níveis absurdamente terríveis. Olhar Aterrorizante gera terror insuportável em sua vítima, estupefazendo-a em loucura, imobilidade ou fuga imprudente. Mesmo o indivíduo mais forte desmoronará diante do horrível semblante do vampiro.",
+        system:
+          "O personagem testa Carisma + Intimidação (dificuldade igual a Raciocínio + Coragem da vítima). Sucessos indicam que a vítima é intimidada, enquanto fracassos significam que o alvo se assusta, mas não fica apavorado com a visão. Três ou mais sucessos significa que o alvo foge com um medo miserável; vítimas que não tenham para onde correr arranham as paredes, tentando cavar um caminho para fora no lugar de enfrentar o vampiro. Além disso, cada sucesso subtrai um dado da parada de dados de ação do alvo no próximo turno. O personagem pode tentar usar Olhar Aterrorizante uma vez por turno contra um único alvo, mas pode também usá-lo como uma ação prolongada, somando seus sucessos a fim de subjugar o alvo completamente. Uma vez que o alvo perca dados o suficiente de sua parada para que não possa mais executar qualquer ação, fica tão abalado e com medo que se enrola no chão e chora. Falhar durante a ação prolongada significa que a tentativa vacila. O personagem perde todos os sucessos acumulados e pode começar outra vez no próximo turno, enquanto a vítima pode agir normalmente. Uma falha crítica em qualquer momento indica que o alvo não fica de todo impressionado – talvez até mesmo ache o vampiro uma farsa cômica – e permanece imune a quaisquer utilizações de Presença por parte do personagem pelo resto da história."
+      },
+      {
+        level: 3,
+        description:
+          "Transe: Este poder influencia a emoção dos outros, tornando-os servos do vampiro. Devido ao que estes indivíduos veem como devoção verdadeira e duradoura, eles acatam cada desejo do vampiro. Como isso é feito de boa vontade, no lugar seu ter suas vontades minadas, estes servos mantêm sua criatividade e individualidade. Embora estes lacaios obedientes tenham mais personalidade e sejam mais espirituosos do que os escravos da mente criados por Dominação, eles também são um tanto imprevisíveis. Além disso, já que Transe tem uma duração temporária, lidar com um servo fora do prazo pode ser problemático. Um Membro sábio ou descarta aqueles que colocou em Transe depois que servem à sua utilidade, ou os mantém com mais segurança por um laço de sangue (feito muito mais facilmente por um lacaio bem disposto a servir).",
+        system:
+          "O jogador gasta um Ponto de Sangue e testa Aparência + Empatia (dificuldade igual à Força de Vontade atual do alvo); o número de sucessos determina por quanto tempo o alvo permanece em Transe, de acordo com a tabela a seguir. (Alvos ainda podem gastar Força de Vontade para resistir temporariamente, como em qualquer outro poder de Presença.) O Narrador pode querer ainda fazer outro teste, uma vez que o personagem nunca tem certeza da força do poder sobre sua vítima. O vampiro pode tentar manter o alvo sob servidão, mas pode fazer apenas depois que o Transe inicial acabar. Tentar usar este poder enquanto Transe ainda está em ação não tem efeito."
+      },
+      {
+        level: 4,
+        description:
+          "Convocação: Este poder impressionante permite que o vampiro convoque qualquer pessoa que já tenha encontrado. Esta convocação pode chamar qualquer um, mortal ou sobrenatural, através de qualquer distância dentro do mundo físico. O alvo da Convocação atende tão rápido quanto for capaz, possivelmente mesmo sem saber o motivo. Ele sabe intuitivamente como encontrar quem o Convoca – mesmo que o vampiro se mova para um novo lugar, o alvo redireciona seu caminho logo que puder. Afinal, ele está indo até o vampiro em si, não para algum lugar pré-determinado. Ainda que este poder permita ao vampiro chamar alguém através de distâncias surpreendentes, ele funciona melhor quando usado em curta distância. Mesmo que a pessoa convocada reserve passagem no próximo voo, chegar a Kyoto saindo de Milwaukee ainda pode demorar muito mais tempo do que o vampiro dispõe. Obviamente, os recursos financeiros do indivíduo são um fator importante; se ele não tiver dinheiro para viajar rapidamente, ele vai levar muito mais tempo para chegar lá. O alvo pensa principalmente em chegar até o vampiro, mas não negligencia seu próprio bem-estar. Isso conta menos se ele só tiver que atravessar uma sala, a menos que ele tenha que passar por uma gangue de punks armados para fazer isto. O indivíduo mantém seus instintos de sobrevivência, e embora ele não vá se esquivar de violência física para estar ao lado do vampiro, ele não vai se colocar em situações suicidas. A Convocação se dissipa ao amanhecer. A menos que o alvo seja treinado para continuar indo em direção ao vampiro após a primeira chamada, o imortal precisa Convocar cada noite, até que o alvo chegue. Assim, enquanto o vampiro estiver disposto e capaz, ele tem a certeza de que cumprimentará o alvo desejado em uma noite qualquer – desde que não aconteça nada com ele no caminho, é claro.",
+        system:
+          "O jogador gasta um Ponto de Sangue e testa Carisma + Lábia. A dificuldade base é 5. Ela aumenta para 7 se o alvo for alguém que se tenha encontrado apenas rapidamente. Se o personagem já tiver usado Presença com sucesso sobre o alvo no passado, a dificuldade diminui para 4, mas se a tentativa falhou, a dificuldade aumenta para 8."
+      },
+      {
+        level: 5,
+        description:
+          "Majestade: Neste estágio, o vampiro pode aumentar seu aspecto sobrenatural em mil vezes. O atrativo se torna paralizantemente belo; o familiar se torna horrivelmente distorcido. Majestade inspira respeito universal, devoção, medo – ou todas essas emoções de uma só vez – naqueles ao redor do vampiro. Os fracos se desdobram para obedecer cada capricho dele, e mesmo os mais destemidos acham que é quase impossível negar algo a ele. Pessoas afetadas acham o vampiro tão formidável que não ousariam deixá-lo descontente. Levantar suas vozes contra ele é difícil; levantar a mão contra ele é impensável. Os poucos que conseguem abalar a potente mística do vampiro o bastante para se opor a ele são calados pelos muitos sob seu comando, antes que o imortal precise sequer responder. Sob a influência de Majestade, corações se partem, poderes cambaleiam e corajosos tremem. Membros sábios usam este poder com cautela contra mortais tanto quanto contra imortais. Apesar Majestade poder acovardar políticos influentes e Primogênitos veneráveis, o vampiro precisa ser cuidadoso para que isso não se volte contra ele depois. Afinal, alguém importante que seja humilhado perante outros perde sua utilidade rapidamente, enquanto um Membro que foi humilhado tem séculos para planejar vingança.",
+        system:
+          "Nenhum teste é necessário por parte do vampiro, mas ele deve gastar um ponto de Força de Vontade. Um alvo deve fazer um teste de Coragem (dificuldade igual ao Carisma + Intimidação do vampiro, até um máximo de 10) se ele quiser ser rude ou simplesmente se posicionar contra o vampiro. Sucessos permitem ao indivíduo agir normalmente no momento, embora ele sinta o peso do desagrado do vampiro se abatendo sobre ele. Um alvo que falhe no teste cancela sua ação pretendida e chega ao absurdo de se humilhar perante o vampiro, não importa quem esteja assistindo. Os efeitos de Majestade duram uma cena."
+      }
+    ]
+  }
+];

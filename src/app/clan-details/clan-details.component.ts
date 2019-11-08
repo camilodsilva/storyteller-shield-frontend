@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 
-import { ClansInterface } from "../models/ClansInterface";
+import { IClans } from "../models/IClans";
 import { CLANS_DATA } from "../repositories/ClansRepository";
 
 @Component({
@@ -11,7 +11,7 @@ import { CLANS_DATA } from "../repositories/ClansRepository";
 })
 export class ClanDetailsComponent implements OnInit {
   private clanName: string;
-  private clan: ClansInterface;
+  private clan: IClans;
   private disciplines: string[];
 
   constructor(private route: ActivatedRoute) {

@@ -31,6 +31,32 @@
           </button>
         </mat-card-actions>
       </mat-card>
+
+      <mat-card class="rules-card">
+        <mat-card-header>
+          <mat-card-subtitle>Disciplinas</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="/assets/disciplines/disciplines.jpg"
+          alt="Disciplinas"
+        />
+        <mat-card-content>
+          <p>
+            Lista de regras das disciplinas
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            [routerLink]="'/disciplines'"
+            routerLinkActive="active"
+          >
+            Ir para Disciplinas
+          </button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </section>
 </div>

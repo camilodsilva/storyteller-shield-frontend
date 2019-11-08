@@ -1,0 +1,42 @@
+<div class="home-container">
+  <section>
+    <app-page-header headerTitle="Disciplinas" backTo="home"></app-page-header>
+  </section>
+
+  <section class="page-container">
+    <div class="clan-details-container" *ngFor="let discipline of disciplines">
+      <h1 class="main-title">
+        <strong>
+          <a id="{{ discipline.name }}">{{ discipline.label }}</a>
+        </strong>
+      </h1>
+      <p>{{ discipline.sumary }}</p>
+
+      <h1 class="main-title">Níveis</h1>
+      <div
+        class="disciplines-levels-container"
+        *ngFor="let level of discipline.levels"
+      >
+        <div class="discipline-container">
+          <div class="discipline-level">
+            <span
+              *ngFor="let levelAvailable of levelsAvailable"
+              [ngClass]="{
+                'disciplines-level-filled': level.level >= levelAvailable
+              }"
+            >
+              1
+            </span>
+          </div>
+          <div class="discipline-description">
+            <p *ngIf="level.description">
+              {{ level.description }}
+            </p>
+            <p><strong>Sistema: </strong>{{ level.system }}</p>
+          </div>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+    </div>
+  </section>
+</div>

@@ -8,17 +8,19 @@ h1 {
 }
 
 .page-header-go-back {
-  width: 300px;
+  width: 100px;
+  height: 100%;
 }
 
 .page-header-title {
   display: flex;
   align-items: center;
   background-color: #3f51b5;
+  height: 80px;
 }
 
 @media only screen and (max-width: 700px) {
   .page-header-go-back {
-    width: 100%;
+    width: 70px;
   }
 }

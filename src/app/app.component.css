@@ -1,3 +1,8 @@
+img {
+  max-width: 120px;
+  max-height: 70px;
+}
+
 .app-title {
   padding: 10px;
 }

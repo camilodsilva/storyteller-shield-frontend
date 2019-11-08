@@ -18,6 +18,7 @@ import { ClansComponent } from "./clans/clans.component";
 import { PageHeaderComponent } from "./page-header/page-header.component";
 import { PageBodyComponent } from "./page-body/page-body.component";
 import { ClanDetailsComponent } from "./clan-details/clan-details.component";
+import { DisciplinesComponent } from './disciplines/disciplines.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ClanDetailsComponent } from "./clan-details/clan-details.component";
     ClansComponent,
     PageHeaderComponent,
     PageBodyComponent,
-    ClanDetailsComponent
+    ClanDetailsComponent,
+    DisciplinesComponent
   ],
   imports: [
     BrowserModule,
