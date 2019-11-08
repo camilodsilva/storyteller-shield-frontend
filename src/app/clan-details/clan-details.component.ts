@@ -10,9 +10,9 @@ import { CLANS_DATA } from "../repositories/ClansRepository";
   styleUrls: ["./clan-details.component.css"]
 })
 export class ClanDetailsComponent implements OnInit {
-  private clanName: string;
-  private clan: IClans;
-  private disciplines: string[];
+  clanName: string;
+  clan: IClans;
+  disciplines: string[];
 
   constructor(private route: ActivatedRoute) {
     this.route.paramMap.subscribe(param => {

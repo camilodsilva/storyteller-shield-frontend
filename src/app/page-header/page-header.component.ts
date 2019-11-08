@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./page-header.component.css"]
 })
 export class PageHeaderComponent implements OnInit {
-  @Input() private headerTitle: string;
-  @Input() private backTo: string;
+  @Input() headerTitle: string;
+  @Input() backTo: string;
 
   constructor() {}
 

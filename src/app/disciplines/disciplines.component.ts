@@ -10,9 +10,9 @@ import { DISCIPLINES_DATA } from "../repositories/DisciplinesRepository";
   styleUrls: ["./disciplines.component.css"]
 })
 export class DisciplinesComponent implements OnInit {
-  private fragment: string;
-  private disciplines: IDisciplines[];
-  private levelsAvailable: number[];
+  fragment: string;
+  disciplines: IDisciplines[];
+  levelsAvailable: number[];
 
   constructor(private route: ActivatedRoute) {}
 

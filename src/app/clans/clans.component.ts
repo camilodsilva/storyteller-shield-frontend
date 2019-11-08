@@ -8,7 +8,7 @@ import { CLANS_DATA } from "../repositories/ClansRepository";
   styleUrls: ["./clans.component.css"]
 })
 export class ClansComponent implements OnInit {
-  private clans;
+  clans;
 
   constructor() {
     this.clans = CLANS_DATA;
